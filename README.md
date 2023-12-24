@@ -1,4 +1,4 @@
-# Next.Js-RustPrisma-Postgres-Docker
+# Next.Js-Rust-Postgres-Docker
 
 # Backend Rust (no framework, Serde for serialization)
 
@@ -26,23 +26,6 @@ cargo new backend
 
 # \dt (relations)
 
-```
-
-# ORM (prisma)
-
-```
-# npx prisma init
-
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/postgres?schema=public"
-
-# npx prisma generate (Prisma schema loaded)
-
-(sync database with prisma)
-# docker exec -it backend npx prisma migrate dev --name init
-
-(Run Studio)
-
-# npx prisma studio
 ```
 
 # Docker
