@@ -3,3 +3,5 @@ C:\Users\chauh\OneDrive\Desktop\Next.Js-Rust-Prisma-Postgres-Docker\backend\targ
 C:\Users\chauh\OneDrive\Desktop\Next.Js-Rust-Prisma-Postgres-Docker\backend\target\debug\deps\backend-3cebecd47112220e.d: src\main.rs
 
 src\main.rs:
+
+# env-dep:DATABASE_URL
