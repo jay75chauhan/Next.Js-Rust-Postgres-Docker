@@ -84,11 +84,11 @@ fn handle_client(mut stream: TcpStream) {
 
             let (status_line, content) = match &*request {
                 r if r.starts_with("OPTIONS") => (OK_RESPONSE.to_string(), "".to_string()),
-                r if r.starts_with("POST /api/rust/users") => handle_post_request(r),
-                r if r.starts_with("GET /api/rust/users/") => handle_get_request(r),
-                r if r.starts_with("GET /api/rust/users") => handle_get_all_request(r),
-                r if r.starts_with("PUT /api/rust/users/") => handle_put_request(r),
-                r if r.starts_with("DELETE /api/rust/users/") => handle_delete_request(r),
+                r if r.starts_with("POST /api/users") => handle_post_request(r),
+                r if r.starts_with("GET /api/users/") => handle_get_request(r),
+                r if r.starts_with("GET /api/users") => handle_get_all_request(r),
+                r if r.starts_with("PUT /api/users/") => handle_put_request(r),
+                r if r.starts_with("DELETE /api/users/") => handle_delete_request(r),
                 _ => (NOT_FOUND.to_string(), "404 not found".to_string()),
             };
 

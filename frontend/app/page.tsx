@@ -11,7 +11,7 @@ interface User {
 }
 
 export default function Home() {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api";
   const [users, setUsers] = useState<User[]>([]);
   const [newUser, setNewUser] = useState({ name: "", email: "" });
   const [updateUser, setUpdateUser] = useState({ id: "", name: "", email: "" });
